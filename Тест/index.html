@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Allsoft.ru | Группа компаний Softline</title>
+	<meta charset="utf-8">
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/mystyle.css" rel="stylesheet">
+  </head>
+  <body>
+
+  <script src="http://code.jquery.com/jquery-latest.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+	
+	<!--Макет-->
+	<div>
+	
+	<header>
+		<div class="logo"></div>
+		<!--<div class="slogan"><p class="line">Новогодняя викторина<br/>от Allsoft.ru</p><p class="date">2012</p></div>-->
+		<nav>
+			<ul>
+				<li><a href="#">О магазине</a></li>
+				<li><a href="#">Контакты</a></li>
+				<li><a href="#">Блог Allsoft</a></li>
+				</ul>
+		</nav>
+	</header>
+	
+	<article>
+		<p class="main">Команда Allsoft.ru поздравляет всех пользователей лицензионного софта с наступающим Новым годом!</p>
+		<p>Уходящий год был богат на события и запомнился всем нам не только финансовыми затруднениями и эпидемией гриппа. 
+		В этом году вышла Windows 7 - качественно новая версия операционной системы от Microsoft, в Россию пришел SaaS,
+		стало возможным покупать софт по SMS и в целом появилось гораздо
+		больше возможностей для получения качественного ПО по доступным ценам на всей территории нашей страны.</p>
+		<p>Вы в курсе событий из мира софта и IT? Тогда испытайте ваши знания в новогодней викторине от Allsoft.ru и выиграйте замечательные подарки!
+		Стоит отметить, что часть наших подарков не стала дожидаться вашего участия в викторине и уже удобно расположилась в районе новогоднего дерева.
+		Скидки для вас приготовили наши лучшие партнеры - производители качественного и популярного программного обеспечения.<br/><br/>
+		<a href="#">Собирайте подарки, участвуйте в викторине и оставайтесь с нами в новом 2012 году!</a></p>
+	</article>
+	
+	<article class="victblock">
+		<p class="titlevicblock">Новогодняя<br/>викторина</p>
+		<div  class="good">
+			
+			<p>Выберите подарок:</p>
+			<div class="carousel">
+				<a href="#" class="arrow left-arrow" id="prev"><img src="img/prevbutton.png" class="button" /></a>
+				  <div class="gallery">
+					<ul id="images">
+					  <li><img src="img/goods1.png"></li>
+					  <li><img src="img/goods2.png"></li>
+					  <li><img src="img/goods3.png"></li>
+					  <li><img src="img/goods4.png"></li>
+					  <li><img src="img/goods5.png"></li>
+					</ul>
+				  </div>
+				<a href="#" class="arrow right-arrow" id="next"><img src="img/nextbutton.png" class="button" /></a>
+			</div>
+			<a class="link" href="#">Panda Global<br/>Protection 2011</a>
+			<p>Призом является Panda Global Protection 2009 с бесплатным сроком регистрации 3 месяца.</p>
+			<a class="link" href="#">Полное описание</a>
+			<p>Цена: 667 руб.</p>
+		</div>
+	</article>
+	
+	<script>                                                 	//карусельный
+/* конфигурация  */
+var width = 108; // ширина изображения
+var count = 1; // количество изображений
+
+var ul = document.getElementById('images');
+var imgs = ul.getElementsByTagName('li');
+
+var position = 0; // текущий сдвиг влево
+
+document.getElementById('prev').onclick = function() {
+  if (position >= 0) return false; // уже до упора
+
+  // последнее передвижение влево может быть не на 3, а на 2 или 1 элемент
+  position = Math.min(position + width*count, 0)
+  ul.style.marginLeft = position + 'px';
+  return false;
+}
+
+document.getElementById('next').onclick = function() {
+  if (position <= -width*(imgs.length-count)) return false; // уже до упора
+
+  // последнее передвижение вправо может быть не на 3, а на 2 или 1 элемент
+  position = Math.max(position-width*count, -width*(imgs.length-count));
+  ul.style.marginLeft = position + 'px';
+  return false;
+};
+
+</script>
+	
+	<article></article>
+	<footer></footer>
+	
+	</div>
+	</body>
+</html>
+<!--
+
+Форма
+-------------------------------------------------
+<div>
+	<p>
+		Перед началом участия в викторине выберите подарок и укажите ваш электронный адрес - на него в случае выигрыша вам будет доставлен приз.
+		После нажатия на кнопку "Старт" вам будет предложено ответить на семь несложных вопросов по теме лицензионного софта. 
+		По каждому вопросу на страницах сайта магазина Allsoft.ru можно найти подсказки. 
+		Если вы ответите правильно на все вопросы, то вам незамедлительно будет вручен подарок! 
+		Для участия в викторине у вас есть две попытки.
+	</p>
+	<form>
+		<p>Ваша электронная почта</p>
+		<input type="text" >
+		<p><span>Вопрос 1</span> из 7</p>
+		<p>Какого числа Windows 7 появилась в продаже?<Br>
+			<input type="radio" name="answer" value="2009-10-22"> 22 октября 2009 года<Br>
+		   <input type="radio" name="answer" value="2009-09-15"> 15 сентября 2009 года<Br>
+		   <input type="radio" name="answer" value="2009-11-10"> 10 ноября 2009 года<Br>
+		</p>
+		<p><input type="submit" value="Следующий вопрос">
+	</form>
+</div>
+-->

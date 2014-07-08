@@ -1,0 +1,185 @@
+body>div{
+	width: 1000px;
+	height: 1700px;
+	background: url(../img/bodybg.jpg) no-repeat, #2ebdf5;
+	margin: -15px auto 0;
+	box-shadow: 0 0 4px #ccc;
+	font-family:Arial;
+}
+
+/*Шапка*/
+
+header{
+	width:100%;
+	height:140px;
+}
+.logo{
+	position: absolute;
+	top:-40px;
+	width: 335px;
+	height: 180px;
+	background: url(../img/logo.jpg) no-repeat 100% 100% #fff;
+	border-radius:15px;	
+	margin-left: 45px;
+	margin-top:0px;
+}
+
+/*Слоган*/
+.slogan{
+	position: absolute;
+	top:-40px;
+	background-color:#fff;
+	width: 370px;
+	height:180px;
+	margin-left:410px;
+}
+.line{
+	display:inline-block;
+}
+.date{
+	position: absolute;
+	bottom:0;
+	right:0;
+	color:#005b7f;
+	font: 60px Arial;
+	margin:0;
+}
+
+/* Навигация */
+/*http://htmlacademy.ru/courses/50/run/5*/
+nav{
+	width:100px;
+	height:100px;
+	display:block;
+	float:right;
+	background-color: #005b7f;
+	border-radius: 15px;
+	margin-top: 35px;
+	margin-right: 100px;
+}
+nav ul{
+	width:85px;
+	height:90px;
+	margin:5px;
+	padding-left:5px;
+	list-style:none;
+}
+nav li{
+	display:block;
+}
+nav a{
+	display:block;
+	padding-left:5px;
+	width:80px;
+	height:30px;
+	font: 14px/14px Arial;
+	line-height:30px;
+	color: white;
+	background-color:white;
+	border-radius:10px;
+	background-color: #005b7f;
+}
+nav a:hover{
+	color: black;
+	background-color: white;
+}
+
+/*Article*/ 
+article{
+	width: 605px;
+	padding-left:45px;
+	padding-top:30px;
+}
+.main{
+	font-size:24px;
+	font-style:bold;
+	margin:0;
+}
+article p{
+	font-size:12px;
+	margin-bottom:10px;
+}
+article a{
+	text-decoration:none;
+}
+.victblock{
+	background: url(../img/vict.jpg) no-repeat;
+	width:600px;
+	height:555px;
+	border-top-right-radius:20px;
+	border-bottom-right-radius:20px;
+	/*-moz-border-radius-topright: 20px;
+	-moz-bottom-right-radius:20px;
+	-webkit-border-bottom-right-radius:20px;
+	-webkit-border-top-right-radius:20px;*/
+	margin-top:115px;
+	padding:25px 25px 0 45px;
+}
+
+.titlevicblock{
+	width:150px;
+	height: 50px;
+	margin:0;
+	font-size:24px;
+	color: #fff;
+}
+.good{
+	width:150px;
+	height: 300px;
+	margin: 30px 0 0 0;
+	font-size:12px;
+}
+.good>p:first-child{
+	font-size:14px;
+}
+
+/*карусельная*/
+.carousel {
+  position: relative;
+  width: 108px;
+  padding: 0 30px;
+  margin-left:-10px;
+  margin-bottom:10px;
+}
+.carousel img {
+  width: 108px;
+  height: 108px;
+  display: block;
+}
+.carousel .arrow {
+  position: absolute;
+  top: 35px;
+  text-decoration: none;
+}
+
+.carousel .arrow:hover {
+	opacity:0.8;
+}
+.carousel .left-arrow {
+  left: 0;
+}
+.carousel .right-arrow {
+  right: 0px;
+}
+.gallery {
+  width: 108px;
+  overflow: hidden;
+}
+.gallery ul {
+  height: 108px;
+  width: 9999px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.gallery ul li {
+	float: left;
+}
+img.button{
+	width:28px;
+	height: 43px;
+}
+.link{
+	text-decoration:underline;
+}
